@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$primary-font: 'Lato', sans-serif;
+
+/// Code (monospace) font family
+/// @type List
+$secondary-font: 'Josefin Sans', sans-serif;
+
+$Linen: var(--Linen);
+$Eerie-Black: var(--Eerie-Black);
+$Platinum: var(--Platinum);
+$Ghost-White: var(--Ghost-White);
+
+$Success: #57b846;
+$Error: #e5383b;

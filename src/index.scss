@@ -1,0 +1,35 @@
+:root {
+  --Linen: #ffefe2;
+  --Eerie-Black: #1c1c21;
+  --Platinum: #e8e8e8;
+  --Ghost-White: #f8f9fe;
+  --max-width: 140rem;
+  --bg-gradient: linear-gradient(to bottom, #e8e8e8, #ececed, #f0f0f3, #f4f5f8, #f8f9fe);
+  --bg-gradient-dark: linear-gradient(
+    to top,
+    #e8e8e8,
+    #afafb1,
+    #7a7a7d,
+    #48484d,
+    #1c1c21
+  );
+}
+
+.container {
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+section {
+  padding: 9rem 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+// background-image: linear-gradient(to bottom, #e8e8e8, #ececed, #f0f0f3, #f4f5f8, #f8f9fe);
