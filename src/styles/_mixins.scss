@@ -72,8 +72,8 @@
       @content;
     }
   }
-  @if $breakpoint == largeMin {
-    @media (min-width: 75em) {
+  @if $breakpoint == tabletDown {
+    @media (max-width: 62em) {
       @content;
     }
   }

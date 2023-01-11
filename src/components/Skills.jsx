@@ -31,15 +31,12 @@ const Skills = () => {
     });
 
     setFilterProjects(filteredProjects);
-    console.log(filteredProjects);
   }, [projects, activeFilter]);
-
-  // const setFilter
 
   return (
     <section className="skills">
       <div className="container">
-        <h2>My Creative Portfolio Section</h2>
+        <h2>My Experience Portfolio</h2>
         <div className="skills-filter">
           {tags.map((tag) => {
             return (
