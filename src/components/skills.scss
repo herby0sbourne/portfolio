@@ -3,6 +3,7 @@
 
   h2 {
     font-size: 3.6rem;
+    padding: 0 2rem;
   }
 
   .container {
@@ -35,6 +36,10 @@
   padding-left: clamp(2rem, 4vw, 24rem);
   padding-right: clamp(2rem, 4vw, 24rem);
   width: 100%;
+
+  @include breakpoint(large) {
+    column-gap: 2rem;
+  }
 
   .work-card {
     width: 100%;
