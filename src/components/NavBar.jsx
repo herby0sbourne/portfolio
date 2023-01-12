@@ -1,20 +1,22 @@
 import React from 'react';
+import useScroll from './../hooks/useScroll';
 
 const NavBar = () => {
+  const { isScroll } = useScroll();
   return (
-    <header className="header">
+    <header className={`header ${isScroll ? 'scrolled' : ''} `}>
       <nav>
         <div className="logo">HO</div>
         <div className="navlinks">
           <ul>
             <li className="navlink">
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li className="navlink">
               <a href="#">About</a>
             </li>
             <li className="navlink">
-              <a href="#">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li className="navlink">
               <a href="#">Contact</a>

@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <div className="landing">
+      <div className="landing" id="home">
         <main className="page">
           <div></div>
           <div className="intro">
@@ -22,7 +22,6 @@ const Home = () => {
                 i'm a Front-End developer who skilled in React and javascript, a popular
                 JavaScript library for building user interfaces.
               </p>
-              {/* <br /> */}
               <p>
                 I'm able to take a wireframe, which is a visual representation of a
                 website or app's layout and design, turn it into a fully functional app.

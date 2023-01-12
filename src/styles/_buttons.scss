@@ -1,5 +1,8 @@
 button {
   font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  border: 0;
 }
 
 button.cta-btn {
@@ -14,8 +17,6 @@ button.cta-btn {
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
 }
 
 button.cta-btn:hover {
@@ -55,4 +56,51 @@ button.select:hover,
 
 button.select:active {
   box-shadow: none;
+}
+
+////////////////// * load more */////////////////
+button.load-more {
+  align-items: center;
+  background-image: linear-gradient(144deg, #ffefe2, #e8e8e8, #1c1c21);
+  border-radius: 8px;
+  box-shadow: rgba(255, 239, 226, 0.877) 0 15px 30px -5px;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  transition: all 0.3s;
+  margin-top: 8rem;
+}
+
+button.load-more:active,
+button.load-more:hover {
+  outline: 0;
+  color: black;
+}
+
+button.load-more span {
+  background-color: #1c1c21;
+  padding: 16px 24px;
+  border-radius: 6px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 22px -7px rgb(0 0 0);
+  transition: 0.3s;
+}
+
+button.load-more:hover span {
+  background: none;
+  color: black;
+}
+
+button.load-more:active {
+  transform: scale(0.9);
 }
