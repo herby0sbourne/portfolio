@@ -7,6 +7,8 @@
   // background-color: $Eerie-Black;
   background-image: linear-gradient(to top, #1c1c21, #4d4d51, #848487, #c0c0c1 80%);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.19);
+  position: relative;
+  z-index: 2;
 }
 
 .tracking-in-expand-fwd {

@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 
 import About from './About';
 import Skills from './Skills';
+import ParticlesCOM from './Particles';
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
           </div>
           <div></div>
         </main>
+        <ParticlesCOM />
       </div>
       <About />
       <Skills />
