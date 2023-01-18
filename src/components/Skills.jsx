@@ -1,20 +1,9 @@
+import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import PROJECTS from '../data/projests';
 import SkillCard from './SkillCard';
-import { motion } from 'framer-motion';
 
 const tags = ['All', 'React', 'Node.Js', 'UX/UI', 'Mobile App'];
-const listItem = [
-  'React',
-  'Node.Js',
-  'Redux',
-  'sass',
-  'Express',
-  'constext api',
-  'firebase',
-  'firestore',
-  'lodash',
-];
 
 const Skills = () => {
   const [projects, setProjects] = useState([]);
