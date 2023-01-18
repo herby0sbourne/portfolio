@@ -26,11 +26,39 @@ nav {
   margin: 0 auto;
   height: 5rem;
 
+  @include breakpoint(tabletDown) {
+    &.open .navlinks {
+      width: 275px;
+    }
+  }
+
   .logo {
     color: $Ghost-White;
   }
 
   .navlinks {
+    @include breakpoint(tabletDown) {
+      position: absolute;
+      top: 5rem;
+      right: 0;
+      height: calc(100vh - 5rem);
+
+      //
+      background: rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(11.5px);
+      -webkit-backdrop-filter: blur(11.5px);
+      border-top: 1px solid $Linen;
+
+      //
+      width: 0;
+      overflow: hidden;
+      transition: 0.5s ease-in;
+
+      &.open {
+        width: 275px;
+      }
+    }
+
     a {
       font-size: 1.45rem;
       color: $Platinum;
@@ -38,6 +66,10 @@ nav {
 
     li:not(:last-child) {
       margin-right: 35px;
+
+      @include breakpoint(tabletDown) {
+        margin: 0;
+      }
     }
   }
 
@@ -45,5 +77,62 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include breakpoint(tabletDown) {
+      flex-direction: column;
+      gap: 4rem;
+      padding-top: 4rem;
+      justify-content: initial;
+      height: inherit;
+    }
+  }
+}
+
+.hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  visibility: hidden;
+
+  @include breakpoint(tabletDown) {
+    visibility: visible;
+  }
+
+  .hamburgerIcon {
+    width: 2.6rem;
+    background-color: $Linen;
+    height: 0.3rem;
+    border-radius: 0.3rem;
+
+    &.open {
+      background-color: transparent;
+
+      &::before {
+        transform: translateX(0) rotate(-45deg);
+      }
+      &::after {
+        transform: translateX(0) rotate(45deg);
+      }
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      border-radius: 0.3rem;
+      transition: 0.5s;
+      background-color: $Linen;
+    }
+
+    &::before {
+      transform: translateY(-7px);
+    }
+    &::after {
+      transform: translateY(7px);
+    }
   }
 }

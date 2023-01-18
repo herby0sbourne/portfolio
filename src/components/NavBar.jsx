@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useScroll from './../hooks/useScroll';
 
 const NavBar = () => {
   const { isScroll } = useScroll();
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className={`header ${isScroll ? 'scrolled' : ''} `}>
-      <nav>
+      <nav className={`${isOpen ? 'open' : ''}`}>
         <div className="logo">HO</div>
         <div className="navlinks">
           <ul>
@@ -26,7 +27,9 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <div className="hamburger">H</div>
+        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+          <div className={`hamburgerIcon ${isOpen ? 'open' : ''}`}></div>
+        </div>
       </nav>
     </header>
   );
