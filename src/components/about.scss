@@ -1,18 +1,44 @@
 .about {
+  h2 {
+    font-size: 4rem;
+    // font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    // width: 49rem;
+    max-width: 49rem;
+    max-width: 328px;
+  }
+
   .about-container {
-    flex-direction: column;
+    // flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 0 2rem;
+  }
 
-    h2 {
-      font-size: 4rem;
-      // font-weight: 300;
-      margin-bottom: 1rem;
-    }
+  .about-me {
+    border-right: 2px solid var(--Linen);
+    padding-right: 2rem;
+  }
 
-    p {
-      font-size: 1.6rem;
-      // width: 49rem;
-      max-width: 49rem;
+  .skill-container {
+    padding-left: 2rem;
+  }
+
+  .cv-btn {
+    background-color: black;
+    border-radius: 8px;
+    color: var(--Linen);
+    max-width: max-content;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+
+    a {
+      display: block;
+      padding: 1.5rem 3rem;
     }
   }
 
@@ -61,4 +87,58 @@
 }
 .text-pop-up-top {
   animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.loop-container {
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+  line-height: 30px;
+
+  &:hover .loop {
+    animation-play-state: paused;
+  }
+}
+
+.loop {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: loopAnimate 30s linear infinite;
+
+  &-item {
+    color: pink;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+
+    &:not(:hover) {
+      color: black;
+    }
+  }
+
+  &.loop2 {
+    animation-delay: 15s;
+  }
+}
+
+@keyframes loopAnimate {
+  // from {
+  //   left: 0%;
+  // }
+  // to {
+  //   left: -100%;
+  // }
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
 }
