@@ -13,6 +13,8 @@
     #48484d,
     #1c1c21
   );
+  --animationspeed: 30s;
+  --animationdelay: calc(var(--animationspeed) / 2);
 }
 
 .container {

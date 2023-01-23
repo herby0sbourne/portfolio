@@ -1,4 +1,5 @@
 import sample from '../assets/about04.png';
+import example from '../assets/testpic.png';
 
 const projests = [
   {
@@ -11,7 +12,7 @@ const projests = [
   },
   {
     title: 'Dashboard',
-    img: sample,
+    img: example,
     gitHub: 'https://www.google.com/',
     viewLik: 'https://www.google.com/',
     tags: ['React', 'All'],

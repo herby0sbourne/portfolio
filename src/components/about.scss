@@ -22,6 +22,7 @@
   .about-me {
     border-right: 2px solid var(--Linen);
     padding-right: 2rem;
+    height: calc(100vh - 9rem);
   }
 
   .skill-container {
@@ -95,6 +96,11 @@
   overflow: hidden;
   line-height: 30px;
 
+  &:hover .loop-item:not(:hover) {
+    filter: grayscale(100%);
+    opacity: 0.75;
+  }
+
   &:hover .loop {
     animation-play-state: paused;
   }
@@ -105,11 +111,15 @@
   justify-content: space-around;
   position: absolute;
   top: 0;
-  left: 100%;
-  width: 100%;
+  min-width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  animation: loopAnimate 30s linear infinite;
+  animation: loopAnimate var(--animationspeed) linear infinite;
+
+  // &:hover .loop-item:not(:hover) {
+  //   filter: grayscale(100%);
+  //   opacity: 0.75;
+  // }
 
   &-item {
     color: pink;
@@ -117,28 +127,38 @@
     height: 30px;
     display: flex;
     justify-content: center;
+    margin: 0 1rem;
+    transition: 0.3s;
 
     &:not(:hover) {
       color: black;
     }
   }
 
-  &.loop2 {
-    animation-delay: 15s;
-  }
+  // &.loop2 {
+  //   animation-delay: 15s;
+  // }
+}
+
+.loop.loop2 {
+  transform: translateX(100%);
+  animation-name: loopAnimate2;
 }
 
 @keyframes loopAnimate {
-  // from {
-  //   left: 0%;
-  // }
-  // to {
-  //   left: -100%;
-  // }
   from {
-    left: 100%;
+    transform: translateX(0%);
   }
   to {
-    left: -100%;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loopAnimate2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
   }
 }
