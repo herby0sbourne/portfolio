@@ -1,4 +1,5 @@
 import React from 'react';
+import './loop-item.scss';
 
 const LoopItem = ({ title, fill, path }) => {
   return (

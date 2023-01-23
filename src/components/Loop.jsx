@@ -2,6 +2,8 @@ import React from 'react';
 import allIcons from 'simple-icons';
 import LoopItem from './LoopItem';
 
+import './loop.scss';
+
 const iconSlugs = [
   'typescript',
   'javascript',

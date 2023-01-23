@@ -1,0 +1,41 @@
+.loop {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: loopAnimate var(--animationspeed) linear infinite;
+
+  // &.loop2 {
+  //   animation-delay: 15s;
+  // }
+  &.loop2 {
+    transform: translateX(100%);
+    animation-name: loopAnimate2;
+  }
+}
+
+// .loop.loop2 {
+//   transform: translateX(100%);
+//   animation-name: loopAnimate2;
+// }
+
+@keyframes loopAnimate {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loopAnimate2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

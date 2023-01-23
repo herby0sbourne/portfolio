@@ -90,75 +90,18 @@
   animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.loop-container {
-  position: relative;
-  height: 30px;
-  overflow: hidden;
-  line-height: 30px;
+// .loop-container {
+//   position: relative;
+//   height: 30px;
+//   overflow: hidden;
+//   line-height: 30px;
 
-  &:hover .loop-item:not(:hover) {
-    filter: grayscale(100%);
-    opacity: 0.75;
-  }
+//   &:hover .loop-item:not(:hover) {
+//     filter: grayscale(100%);
+//     opacity: 0.75;
+//   }
 
-  &:hover .loop {
-    animation-play-state: paused;
-  }
-}
-
-.loop {
-  display: flex;
-  justify-content: space-around;
-  position: absolute;
-  top: 0;
-  min-width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: loopAnimate var(--animationspeed) linear infinite;
-
-  // &:hover .loop-item:not(:hover) {
-  //   filter: grayscale(100%);
-  //   opacity: 0.75;
-  // }
-
-  &-item {
-    color: pink;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    margin: 0 1rem;
-    transition: 0.3s;
-
-    &:not(:hover) {
-      color: black;
-    }
-  }
-
-  // &.loop2 {
-  //   animation-delay: 15s;
-  // }
-}
-
-.loop.loop2 {
-  transform: translateX(100%);
-  animation-name: loopAnimate2;
-}
-
-@keyframes loopAnimate {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes loopAnimate2 {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
+//   &:hover .loop {
+//     animation-play-state: paused;
+//   }
+// }

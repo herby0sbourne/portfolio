@@ -1,0 +1,13 @@
+.loop-item {
+  color: pink;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 0 1rem;
+  transition: 0.3s;
+
+  // &:not(:hover) {
+  //   color: black;
+  // }
+}

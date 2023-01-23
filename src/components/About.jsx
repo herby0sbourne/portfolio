@@ -1,6 +1,6 @@
 import React from 'react';
 import CV from '../assets/resume.pdf';
-import Loop from './Loop';
+import LoopScrolling from '../features/loopScrolling/LoopScrolling';
 
 const About = () => {
   return (
@@ -21,10 +21,11 @@ const About = () => {
         </div>
         <div className="skill-container">
           <h2>Skills</h2>
-          <div className="loop-container">
+          <LoopScrolling />
+          {/* <div className="loop-container">
             <Loop />
             <Loop second />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

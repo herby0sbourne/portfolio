@@ -1,0 +1,15 @@
+.loop-container {
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+  line-height: 30px;
+
+  &:hover .loop-item:not(:hover) {
+    filter: grayscale(100%);
+    opacity: 0.75;
+  }
+
+  &:hover .loop {
+    animation-play-state: paused;
+  }
+}
