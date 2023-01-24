@@ -4,6 +4,9 @@
   overflow: hidden;
   line-height: 30px;
 
+  // use if no display
+  width: 100%;
+
   &:hover .loop-item:not(:hover) {
     filter: grayscale(100%);
     opacity: 0.75;

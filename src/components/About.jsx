@@ -1,10 +1,14 @@
 import React from 'react';
 import CV from '../assets/resume.pdf';
 import LoopScrolling from '../features/loopScrolling/LoopScrolling';
+import images from '../constants/images';
 
 const About = () => {
   return (
     <section className="about">
+      <div className="top-loop">
+        <LoopScrolling />
+      </div>
       <div className="container about-container">
         <div className="about-me">
           <h2>About me</h2>
@@ -21,11 +25,58 @@ const About = () => {
         </div>
         <div className="skill-container">
           <h2>Skills</h2>
-          <LoopScrolling />
-          {/* <div className="loop-container">
-            <Loop />
-            <Loop second />
-          </div> */}
+          {/* <LoopScrolling /> */}
+          <div className="skill-tree">
+            <div className="skill-item">
+              <img src={images.figma} alt="fima" />
+              <p>Figma</p>
+            </div>
+            <div className="skill-item">
+              <img src={images.graphql} alt="name " />
+              <p>GraphQl</p>
+            </div>
+            <div className="skill-item">
+              <img src={images.git} alt="name " />
+              <p>Git</p>
+            </div>
+            <div className="skill-item">
+              <img src={images.html} alt="name " />
+              <p>Html5</p>
+            </div>
+            <div className="skill-item">
+              <img src={images.css} alt="name " />
+              <p>Css3</p>
+            </div>
+            <div className="skill-item">
+              <img src={images.graphql} alt="name " />
+              <p>graphQl</p>
+            </div>
+            {/* second */}
+            <div className="skill-item">
+              <img src={images.figma} alt="fima" />
+              <p>Figma</p>
+            </div>
+            <div className="skill-item">
+              <img src={images.graphql} alt="name " />
+              <p>GraphQl</p>
+            </div>
+            <div className="skill-item">
+              <img src={images.git} alt="name " />
+              <p>Git</p>
+            </div>
+            <div className="skill-item">
+              <img src={images.html} alt="name " />
+              <p>Html5</p>
+            </div>
+            <div className="skill-item">
+              <img src={images.css} alt="name " />
+              <p>Css3</p>
+            </div>
+            <div className="skill-item">
+              <img src={images.graphql} alt="name " />
+              <p>graphQl</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

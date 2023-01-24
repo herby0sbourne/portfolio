@@ -5,11 +5,12 @@
     margin-bottom: 1rem;
   }
 
-  p {
-    font-size: 1.6rem;
-    // width: 49rem;
-    max-width: 49rem;
-    max-width: 328px;
+  .top-loop {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
   }
 
   .about-container {
@@ -17,12 +18,32 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 2rem;
+
+    @include breakpoint(tabletDown) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   .about-me {
     border-right: 2px solid var(--Linen);
-    padding-right: 2rem;
+    padding: 0 2rem 0 0;
     height: calc(100vh - 9rem);
+
+    @include breakpoint(tabletDown) {
+      border: 0;
+      border-bottom: 2px solid var(--Linen);
+      padding: 0;
+      margin-bottom: 5rem;
+      padding: 0 0 5rem 0;
+      height: initial;
+    }
+
+    p {
+      font-size: 1.6rem;
+      // width: 49rem;
+      // max-width: 49rem;
+      max-width: 328px;
+    }
   }
 
   .skill-container {
@@ -90,18 +111,33 @@
   animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-// .loop-container {
-//   position: relative;
-//   height: 30px;
-//   overflow: hidden;
-//   line-height: 30px;
+.skill-tree {
+  display: flex;
+  // justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 
-//   &:hover .loop-item:not(:hover) {
-//     filter: grayscale(100%);
-//     opacity: 0.75;
-//   }
+  & .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // flex: 1 1 90px;
+    justify-content: flex-start;
+    margin: 1.6rem;
 
-//   &:hover .loop {
-//     animation-play-state: paused;
-//   }
-// }
+    & p {
+      margin-top: 0.8rem;
+      font-weight: 300;
+      font-size: 1.4rem;
+    }
+
+    & img {
+      height: 9rem;
+
+      @include breakpoint(tabletDown) {
+        height: 7rem;
+      }
+    }
+  }
+}
