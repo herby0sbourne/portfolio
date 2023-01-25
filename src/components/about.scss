@@ -48,6 +48,10 @@
 
   .skill-container {
     padding-left: 2rem;
+
+    @include breakpoint(tabletDown) {
+      padding: 0;
+    }
   }
 
   .cv-btn {
@@ -112,11 +116,16 @@
 }
 
 .skill-tree {
-  display: flex;
+  // display: flex;
   // justify-content: space-between;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
+  // justify-content: flex-start;
+  // align-items: center;
+  // flex-wrap: wrap;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  place-content: center;
+  place-items: center;
 
   & .skill-item {
     display: flex;
@@ -134,6 +143,7 @@
 
     & img {
       height: 9rem;
+      object-fit: contain;
 
       @include breakpoint(tabletDown) {
         height: 7rem;
