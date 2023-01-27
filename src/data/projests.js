@@ -1,14 +1,15 @@
 import sample from '../assets/about04.png';
 import example from '../assets/testpic.png';
+import images from '../constants/images';
 
 const projests = [
   {
-    title: 'Dashboard',
-    img: sample,
-    gitHub: 'https://www.google.com/',
-    viewLik: 'https://www.google.com/',
+    title: 'Transaction Dashboard',
+    img: images.transaction,
+    gitHub: 'https://github.com/herby0sbourne/transaction-dashboard',
+    viewLik: 'https://transaction-dashboard-iez3qkuqu-herby0sbourne.vercel.app/',
     tags: ['React', 'All'],
-    techStacks: ['React', 'Node.Js', 'Redux', 'sass', 'Express', 'constext api'],
+    techStacks: ['React', 'Node.Js', 'Redux Toolkit', 'Material-UI'],
   },
   {
     title: 'Dashboard',
