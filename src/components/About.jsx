@@ -1,7 +1,8 @@
 import React from 'react';
-import CV from '../assets/resume.pdf';
+import SkillIcon from './SkillIcon';
 import LoopScrolling from '../features/loopScrolling/LoopScrolling';
-import images from '../constants/images';
+
+import CV from '../assets/resume.pdf';
 
 const About = () => {
   return (
@@ -27,7 +28,8 @@ const About = () => {
           <h2>Skills</h2>
           {/* <LoopScrolling /> */}
           <div className="skill-tree">
-            <div className="skill-item">
+            <SkillIcon />
+            {/* <div className="skill-item">
               <img src={images.figma} alt="fima" />
               <p>Figma</p>
             </div>
@@ -50,9 +52,9 @@ const About = () => {
             <div className="skill-item">
               <img src={images.graphql} alt="name " />
               <p>graphQl</p>
-            </div>
+            </div> */}
             {/* second */}
-            <div className="skill-item">
+            {/* <div className="skill-item">
               <img src={images.figma} alt="fima" />
               <p>Figma</p>
             </div>
@@ -75,7 +77,7 @@ const About = () => {
             <div className="skill-item">
               <img src={images.graphql} alt="name " />
               <p>graphQl</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
