@@ -20,12 +20,12 @@ const projests = [
     techStacks: ['React', 'Node.Js', 'Redux', 'sass', 'Express', 'constext api'],
   },
   {
-    title: 'Dashboard',
-    img: sample,
-    gitHub: 'https://www.google.com/',
-    viewLik: 'https://www.google.com/',
-    tags: ['Next.Js', 'All'],
-    techStacks: ['React', 'Node.Js', 'Redux', 'sass', 'Express', 'constext api'],
+    title: 'Ja.Housing',
+    img: images.jaHousing,
+    gitHub: 'https://github.com/herby0sbourne/jahousing_App',
+    viewLik: 'https://pleasant-cyan-frock.cyclic.app/',
+    tags: ['Node.Js', 'All', 'Web'],
+    techStacks: ['Full Stack', 'Node.Js', 'Express.js', 'Sass', 'MVC', 'MongoDB'],
   },
   {
     title: 'Dashboard',
