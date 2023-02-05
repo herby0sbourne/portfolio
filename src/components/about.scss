@@ -50,6 +50,7 @@
     .my-image {
       overflow: hidden;
       border-radius: 12px;
+      height: max-content;
 
       @include breakpoint(xsmall) {
         margin-bottom: 3rem;
@@ -60,6 +61,10 @@
       display: flex;
       gap: 3.4rem;
       margin-top: 1.6rem;
+
+      @include breakpoint(xsmall) {
+        display: block;
+      }
     }
 
     .details {
@@ -67,6 +72,7 @@
         font-size: 2rem;
         font-weight: 600;
         margin-bottom: 1.8rem;
+
         @include breakpoint(xsmall) {
           margin-bottom: 0.8rem;
         }
