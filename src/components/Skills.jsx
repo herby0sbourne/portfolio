@@ -16,8 +16,8 @@ const Skills = () => {
   }, []);
 
   useEffect(() => {
-    const filteredProjects = projects.filter((monster) => {
-      return monster.tags.includes(activeFilter);
+    const filteredProjects = projects.filter((project) => {
+      return project.tags.includes(activeFilter);
     });
 
     setFilterProjects(filteredProjects);

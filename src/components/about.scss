@@ -17,7 +17,8 @@
   .about-container {
     // flex-direction: column;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50%);
     padding: 0 2rem;
 
     @include breakpoint(tabletDown) {
@@ -43,7 +44,33 @@
       font-size: 1.6rem;
       // width: 49rem;
       // max-width: 49rem;
-      max-width: 328px;
+      // max-width: 328px;
+    }
+
+    .my-image {
+      overflow: hidden;
+      border-radius: 12px;
+
+      @include breakpoint(xsmall) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    .description {
+      display: flex;
+      gap: 3.4rem;
+      margin-top: 1.6rem;
+    }
+
+    .details {
+      h4 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.8rem;
+        @include breakpoint(xsmall) {
+          margin-bottom: 0.8rem;
+        }
+      }
     }
   }
 

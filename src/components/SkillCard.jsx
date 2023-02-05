@@ -9,7 +9,7 @@ const SkillCard = ({ title, img, gitHub, viewLik, tags, techStacks }) => {
     <div className="work-card">
       <div className="card-img">
         <img src={img} alt={title} />
-        <div className="main-tag">React</div>
+        <div className="main-tag">tags[0]</div>
       </div>
       <div className="project-link">
         <a href={gitHub} target="_blank" rel="noreferrer">

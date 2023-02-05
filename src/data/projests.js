@@ -25,7 +25,15 @@ const projests = [
     gitHub: 'https://github.com/herby0sbourne/jahousing_App',
     viewLik: 'https://pleasant-cyan-frock.cyclic.app/',
     tags: ['Node.Js', 'All', 'Web'],
-    techStacks: ['Full Stack', 'Node.Js', 'Express.js', 'Sass', 'MVC', 'MongoDB'],
+    techStacks: [
+      'Full Stack',
+      'Node.Js',
+      'Express.js',
+      'Sass',
+      'MVC',
+      'MongoDB',
+      'Handlebars',
+    ],
   },
   {
     title: 'Dashboard',
